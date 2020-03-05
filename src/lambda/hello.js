@@ -15,7 +15,7 @@ exports.handler = function(event, context, callback) {
       headers: {
         'Access-Control-Allow-Origin': '*',
       },
-      body: "Hello, World"
+      body: "NOT Hello, World"
     });
   }
 };
