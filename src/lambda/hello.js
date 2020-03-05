@@ -3,8 +3,10 @@ exports.handler = function(event, context, callback) {
     callback(null, {
       statusCode: 200,
       headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET, POST, PUT',
+        'Allow': 'OPTIONS,GET,POST,PUT,DELETE,PATCH',
+        'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,DELETE,PATCH',
+        'Access-Control-Allow-Headers': 'content-type',
+        'Access-Control-Allow-Origin': 'http://localhost:4200'
       }
     });
   } else {
